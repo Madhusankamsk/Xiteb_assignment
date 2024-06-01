@@ -11,18 +11,18 @@ const services = [
     },
     {
         title: 'Drone Services',
-        description: 'These are unique and often they differ from one industry to the other. Our logistics expertise.',
-        image: fort2, // Replace with actual image URL
+        description: 'These are unique and often they differ from one industry to the other.',
+        image: fort1, // Replace with actual image URL
     },
     {
-        title: 'Ocean Freight Services',
-        description: 'Our ocean freight services ensure timely delivery and exceptional care for all your shipping needs.',
+        title: 'Freight Services',
+        description: 'Our ocean freight services ensure timely delivery for your shipping needs.',
         image: fort1, // Replace with actual image URL
     },
     {
         title: 'Warehouse Solutions',
-        description: 'We provide state-of-the-art warehouse solutions to manage your inventory efficiently.',
-        image: fort2, // Replace with actual image URL
+        description: 'We provide state-of-the-art warehouse solutions to manage your inventory.',
+        image: fort1, // Replace with actual image URL
     },
 ];
 

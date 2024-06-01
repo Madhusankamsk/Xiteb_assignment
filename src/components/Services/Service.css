@@ -14,30 +14,23 @@
   margin-bottom: 20px;
 }
 
-.service-carousel {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  overflow: hidden;
-}
-
 .service-card {
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 35%;
-  height: 85%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
+  /* padding: 10px; */
+  /* box-sizing: border-box; */
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .service-image {
   width: 120px;
   height: auto;
-  border-radius: 8px;
   margin-right: 20px;
 }
 
@@ -71,11 +64,12 @@
 }
 
 .carousel-footer-container {
-  margin: 50px 215px;
+  /* margin: 50px 215px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  padding: 10px;
 }
 
 .carousel-dots {
@@ -109,4 +103,68 @@
 
 .service-find-solutions:hover {
   color: #8BC34A;
+}
+
+@media (min-width: 768px) {
+  .service-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .service-image {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .carousel-footer-container {
+    margin: 50px 215px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .service-image {
+    width: 220px;
+    height: auto;
+    margin-right: 20px;
+  }
 }

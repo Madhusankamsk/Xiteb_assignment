@@ -1,101 +1,158 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 .container {
-    display: flex;
-    padding: 40px 20px; /* Vertical padding 40px, horizontal padding 20px */
-    font-family: Arial, sans-serif;
-  }
+  display: flex;
+  font-family: 'Karla', sans-serif; /* Corrected font-family name */
+  justify-content: center;
+  align-content: center;
+  padding: 150px 20px; /* Vertical padding 40px, horizontal padding 20px */
+}
+
+.left-section {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-top: 5%;
   
-  .left-section {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove extra padding to avoid overflow */
+}
+
+.worker-image {
+  max-width: 600px; /* Set initial max size */
+  height: auto;
+}
+
+.right-section {
+  position: relative;
+  width: 50%;
+  padding-top: 100px;
+  padding-right: 5%;
+  padding-left: 15%;
+}
+
+.title-container {
+  position: relative;
+  display: inline-block;
+}
+
+.title-background {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  height: 130px; /* Adjust size as needed */
+  z-index: 0;
+}
+
+.title-text {
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ec7653;
+}
+
+.right-section p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: rgb(24, 68, 0);
+}
+
+.more-about-button {
+  background-color: #f0f0f0;
+  color: rgb(8, 107, 56);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 15px;
+}
+
+.more-about-button:hover {
+  background-color: rgb(8, 107, 56);
+  color: #f0f0f0;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
-  
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
   .image-container {
+    padding: 20px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  
+
   .worker-image {
-    width: 100%;
-    max-width: 500px; /* Upscale the image */
+    max-width: 100%;
     height: auto;
   }
-  
-  .client-info {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+
+  .right-section {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-color: #ff7043;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
+    
   }
-  
-  .client-info::after {
-    content: '';
-    position: absolute;
-    top: -10px; /* Adjusted position */
-    left: -10px; /* Adjusted position */
-    width: 0;
-    height: 0;
-    border-left: 10px solid #ff7043;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    transform: rotate(210deg); /* Rotate the arrow 270 degrees */
+  .title-text{
+    text-align: center;
   }
-  
-  .client-info h2 {
-    margin: 0;
+
+  .title-container {
+    text-align:left;
+  }
+
+  .title-background {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 60px;
+  }
+
+  .title-text {
     font-size: 24px;
   }
-  
-  .client-info p {
-    margin: 5px 0 0 0;
-    font-size: 14px;
-  }
-  
-  .right-section {
-    width: 50%;
-    padding-top: 100px;
-    padding-right: 3%;
-    padding-left: 3%;
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title-background {
+    top: 0;
+    left: -10px;
+    width: 150px;
+    height: 80px;
   }
-  
-  .right-section h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .highlight {
-    color: #ec7653;
-  }
-  
-  .right-section p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: rgb(24, 68, 0);
 
+  .title-text {
+    font-size: 28px;
   }
-  
-  .more-about-button {
-    background-color: #f0f0f0;
-    color: rgb(24, 68, 0);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 15px;
-  }
-  
-  .more-about-button:hover {
-    background-color: #004d40;
-  }
-  
+}

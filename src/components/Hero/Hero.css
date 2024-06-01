@@ -1,11 +1,124 @@
 .hero-container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.hero-slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-slide {
+  min-width: 100%;
+  height: 100%;
+  justify-content: flex-start; 
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.hero-content-tile {
+  background-color: white;
+  padding: 40px;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-text .highlight {
+  color: #f0c040;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #555;
+  margin: 20px 0;
+}
+
+.discover-button {
+  background-color: #f0c040;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-controls {
+  position: absolute;
+  /* left: 20px;
+  bottom: 20px; */
+  display: flex;
+  gap: 10px;
+}
+
+.prev-slide,
+.next-slide {
+  background-color: #f0c040;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #f0c040;
+}
+
+.vertical-text {
+  font-size: 24px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+} 
+
+@media (min-width: 1024px) {
+  .hero-container {
   height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Change to left-align content */
   padding-left: 20px; /* Add some padding to align the content nicely */
-  /* width: 100%; */
+  width: auto;
   background-color: rgb(255, 255, 255);
 }
 
@@ -71,6 +184,7 @@
   z-index: 0;
   top: 50%;
   height: 90%;
+  width: auto;
   transform: translateY(-50%);
   margin-right: 80px;
 }
@@ -129,16 +243,4 @@
   color: #333;
   margin-right: 20px;
 }
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-  .hero-content-tile {
-    /* background-color: rgb(220, 25, 25); */
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-content-tile {
-    /* background-color: rgb(106, 6, 200); */
-  }
 }

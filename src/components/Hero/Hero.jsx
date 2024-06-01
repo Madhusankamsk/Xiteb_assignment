@@ -13,7 +13,7 @@ const Hero = () => {
       description: 'Amet, tempus egestas facilisis volutpat viverra molestie lobortis posuere maecenas. molestie lobortis posuere maecenas. Eget sapien, gravida neque.',
     },
     {
-      image: fort2,
+      image: fort1,
       title: 'Reliable Shipping Services',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
