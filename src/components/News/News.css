@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .news-container {
     padding: 40px 20px;
+    font-family: "Montserrat", sans-serif;
+
     background-color: #fff;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .news-container h2 {
@@ -22,11 +27,12 @@
 .news-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
+
 .news-item {
-    background-color: #f0f0f0;
+    background-color: #F5F5F5;
     margin-bottom: 20px;
     border-radius: 5px;
     overflow: hidden;
@@ -34,6 +40,7 @@
     display: flex;
     transition: transform 0.3s ease-in-out;
     flex: 1 1 48%;
+    margin-right: 20px;
 }
 
 .news-item:hover {
@@ -41,16 +48,22 @@
 }
 
 .news-item:hover .news-date {
-    background-color: aqua; /* Change background color on hover */
+    background-color: #00C0E4; /* Change background color on hover */
 }
 
 .news-item:hover .news-content {
-    background-color: aqua; /* Change background color of content on hover */
+    background-color: #00C0E4; /* Change background color of content on hover */
+}
+
+.news-item:hover .news-meta  {
+    color: white; /* Change comment icon color on hover */
 }
 
 .news-item:hover .news-meta .comments {
     color: white; /* Change comment icon color on hover */
 }
+
+
 
 .image-container {
     position: relative;

@@ -45,7 +45,6 @@ const Testimonials = () => {
                 <h2>TRUSTED CLIENTS</h2>
                 <p>LOREM IPSUM DOLOR SIT AMET CONSECTETUR</p>
                 <div className="testimonial">
-                    <div className="quote-icon"><FontAwesomeIcon icon={faQuoteLeft} /></div>
                     <p>{quote}</p>
                     <div className="author">
                         <p>{author}</p>

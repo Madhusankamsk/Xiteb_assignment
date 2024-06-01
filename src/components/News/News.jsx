@@ -60,12 +60,12 @@ const News = () => {
                             </div>
                         </div>
                         <div className="news-content">
-                            <h3>{news.title}</h3>
+                            <h5>{news.title}</h5>
                             <div className="news-meta">
                                 <span>{news.author}</span>
                                 <span className="comments">
-                                    <FontAwesomeIcon icon={faComment} /> {news.comments}
-                                </span>
+                                    <FontAwesomeIcon icon={faComment  }   /> 
+                                </span>   {news.comments}
                             </div>
                             <p>{news.description}</p>
                         </div>

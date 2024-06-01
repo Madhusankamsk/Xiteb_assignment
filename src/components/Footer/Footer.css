@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
 .footer-container {
-    background-color: #455a64;
+    font-family: "Yantramanav", sans-serif;
+    background-color: #5D6C83;
     color: white;
-    padding: 40px 20px 20px; /* Reduced bottom padding */
+    padding: 80px; /* Uniform padding for all content */
     position: relative;
 }
 
-p {
+.footer-container p {
     color: white;
     line-height: 1.6;
 }
@@ -18,16 +21,16 @@ p {
 
 .newsletter {
     text-align: center;
-    margin-bottom: 20px; /* Reduced margin bottom */
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 6%;
+    padding: 40px 0; /* Uniform padding */
     flex-wrap: wrap;
 }
 
 .newsletter h2 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
@@ -46,24 +49,27 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .newsletter-subscribe input {
     padding: 10px;
     font-size: 1em;
     border: none;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px 5px 5px 5px;
     outline: none;
     width: 300px;
+    padding:20px;
+
     margin-bottom: 10px;
-    margin-right: 5px; /* Added margin to separate input and button */
+    margin-right: 5px;
 }
 
 .newsletter-subscribe button {
-    padding: 10px 20px;
+    padding:20px;
     font-size: 1em;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 5px 5px 5px;
     background-color: #ff9800;
     color: white;
     cursor: pointer;
@@ -74,6 +80,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 40px 0; /* Uniform padding */
 }
 
 .footer-section {
@@ -122,9 +129,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px; /* Reduced margin top */
     border-top: 1px solid #888;
-    padding: 10px 70px;
+    padding: 10px 0; /* Uniform padding */
     color: white;
     flex-wrap: wrap;
 }
@@ -198,7 +204,7 @@ p {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
-        padding: 10px 20px; /* Reduced padding for small screens */
+        padding: 10px 20px;
     }
 
     .social-icons {

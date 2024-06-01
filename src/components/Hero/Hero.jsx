@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Hero.css';
 import fort1 from "../../assets/fort1.jpg";
-import fort2 from "../../assets/fort2.jpg";
+import hero2 from "../../assets/hero2.webp";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,7 +13,7 @@ const Hero = () => {
       description: 'Amet, tempus egestas facilisis volutpat viverra molestie lobortis posuere maecenas. molestie lobortis posuere maecenas. Eget sapien, gravida neque.',
     },
     {
-      image: fort1,
+      image: hero2,
       title: 'Reliable Shipping Services',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
@@ -37,9 +37,10 @@ const Hero = () => {
           >
             <div className="hero-content-tile">
               <div className="hero-text">
-                <h1>{slide.title.split(' ')[0]} <span className="highlight">{slide.title.split(' ')[1]}</span></h1>
+              <p><span className="small-text-line">| </span><span className="small-text">LOGISTIC</span></p>
+                <h1>{slide.title.split(' ')[0]} <span>{slide.title.split(' ')[1]}</span> <br/> <span className="highlight">{slide.title.split(' ')[2]}</span></h1>
                 <p>{slide.description}</p>
-                <button className="discover-button">Discover More</button>
+                <button className="discover-button">DISCOVER MORE</button>
               </div>
             </div>
             <div className="hero-image">
@@ -49,15 +50,18 @@ const Hero = () => {
         ))}
       </div>
       <div className="slider-controls">
-        <button onClick={prevSlide} className="prev-slide">&lt;</button>
-        <button onClick={nextSlide} className="next-slide">&gt;</button>
+        <div className="slide-counter">
+          {currentSlide + 1} / {slides.length}
+        </div>
+        <button onClick={prevSlide} className="prev-slide">←</button>
+        <button onClick={nextSlide} className="next-slide">→</button>
       </div>
+     
       <div className="vertical-text">
-        #CargoTon
+        #CARGOTONLOGISTIC
       </div>
     </div>
   );
 }
 
 export default Hero;
-

@@ -1,11 +1,12 @@
 .stats-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     padding: 20px;
     background-color: white;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .stat-item {
@@ -15,6 +16,7 @@
     flex-direction: column;
     align-items: center; /* Center align items vertically */
     width: 150px;
+    padding: 30px;
 }
 
 .stat-item .shadow {
@@ -36,6 +38,9 @@
     display: flex;
     flex-direction: row;
     z-index: 1;
+    text-align: center;
+    left: -10%;
+    margin-top: 20px;
 }
 
 .stat-item .content h2 {
@@ -50,4 +55,44 @@ h3{
     font-size: 1.5em;
     margin-left: 10px;
     color: #003366; /* Same dark blue color */
+}
+
+@media (min-width: 768px) {
+    .stats-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        
+    }
+
+    .stat-item {
+        padding: 40px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .stats-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        
+    }
+
+    .tab-row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .stat-item {
+        padding: 0;
+    }
+
 }
