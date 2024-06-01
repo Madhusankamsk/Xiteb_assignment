@@ -1,0 +1,146 @@
+.news-container {
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.news-container p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 48%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 48%;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item:hover .news-date {
+    background-color: aqua; /* Change background color on hover */
+}
+
+.news-item:hover .news-content {
+    background-color: aqua; /* Change background color of content on hover */
+}
+
+.news-item:hover .news-meta .comments {
+    color: white; /* Change comment icon color on hover */
+}
+
+.image-container {
+    position: relative;
+    width: 50%; /* Allocate half the width to the image */
+    height: 200px;
+}
+
+.news-date {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #202d33;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-date p {
+    margin: 0;
+    color: white;
+}
+
+.news-date .date {
+    font-size: 1.2em;
+}
+
+.news-date .month {
+    font-size: 0.7em;
+}
+
+.news-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 10px;
+    flex-grow: 1;
+    width: 50%; /* Allocate half the width to the content */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.news-content h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #999;
+    margin: 5px 0;
+}
+
+.news-meta .comments {
+    margin-left: 10px; /* Space between admin and comments */
+    color: aqua; /* Default color for comment icon */
+}
+
+.news-content p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-content {
+        width: 100%;
+    }
+}

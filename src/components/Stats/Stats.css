@@ -1,0 +1,24 @@
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 2em;
+    color: #003366; /* Dark blue color */
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 1em;
+    color: #666666; /* Gray color */
+}

@@ -1,0 +1,124 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 4%;
+    color: white;
+  }
+  
+  .nav-logo {
+    font-family: Outfit;
+    font-size: 42px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 40px;
+    color: black;
+  }
+  
+  .nav-menu li {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .nav-menu li:hover .dropdown-content {
+    display: block;
+  }
+  
+  .nav-contact {
+    padding: 10px 38px;
+  }
+  
+  .nav-contact.get-quote {
+    background-color: rgb(239, 168, 1);
+    color: white;
+  }
+  
+  .nav-contact.sign-in {
+    background-color: black;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+     .nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100vh; 
+      justify-content: center;
+      margin: 0; 
+    }
+   
+     .nav-logo {
+      font-size: 8vw;
+      margin-bottom: 20px;
+      color: black;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      gap: 20px;
+      font-size: 6vw;
+      color: black;
+    }
+  
+    .nav-contact {
+      padding: 5px 20px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .dropdown-content {
+      position: static;
+      box-shadow: none;
+      min-width: 100%;
+      background-color: transparent;
+      margin-top: 10px;
+    }
+  
+    .dropdown-content a {
+      font-size: 4vw;
+      padding: 10px 0;
+    }
+  
+    .nav-menu li:hover .dropdown-content {
+      display: block;
+      background-color: #f9f9f9;
+    } 
+  }
+  

@@ -1,0 +1,29 @@
+.clients-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.client-item {
+    text-align: center;
+}
+
+.client-item img {
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+
+.client-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+}
+
+.client-item span {
+    font-size: 0.8em;
+    color: #999;
+}
