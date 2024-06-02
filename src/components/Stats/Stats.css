@@ -14,15 +14,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items vertically */
+    align-items: center; 
     width: 150px;
     padding: 30px;
 }
 
 .stat-item .shadow {
     font-size: 9em;
-    color: white; /* White font color */
-    text-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Ash color with blur effect */
+    color: white; 
+    text-shadow: 0 0 10px rgba(128, 128, 128, 0.5); 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +45,7 @@
 
 .stat-item .content h2 {
     font-size: 4em;
-    color: #003366; /* Dark blue color */
+    color: #003366; 
     margin: 0;
     margin-left: 50px;
 }
@@ -54,7 +54,7 @@ h3{
     margin-top: 10px;
     font-size: 1.5em;
     margin-left: 10px;
-    color: #003366; /* Same dark blue color */
+    color: #003366; 
 }
 
 @media (min-width: 768px) {

@@ -3,80 +3,84 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
+  padding: 40px;
   margin-top: 50px;
-  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
 }
 
 .trusted-clients,
 .why-choose-us {
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .trusted-clients h2,
 .why-choose-us h2 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px;
+  padding-bottom: 10px;
 }
 
 .trusted-clients p,
 .why-choose-us p {
-  font-size: 1em;
-  color: #666;
+  font-size: 1.2em;
+  color: #7f8c8d;
   margin-bottom: 20px;
 }
 
 .testimonial {
-  /* position: relative; */
-  /* padding: 20px; */
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  /* width: 300px; */
-  /* height: auto; /* Fixed height */
-  /* overflow: hidden; */
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .quote-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 2em;
-  color: #d9534f;
+  font-size: 2.5em;
 }
 
 .author {
   text-align: right;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .author p {
   font-weight: bold;
   margin: 0;
+  font-size: 1.1em;
 }
 
 .author span {
-  font-size: 0.9em;
-  color: #999;
+  font-size: 1em;
+  color: #bdc3c7;
 }
 
 .navigation {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .navigation button {
   background: none;
   border: none;
   font-size: 1.5em;
-  color: #666;
+  color: #2c3e50;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navigation button:hover {
+  color: #d9534f;
 }
 
 .why-choose-us ul {
@@ -88,17 +92,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ecf0f1;
 }
 
 .why-choose-us li span {
-  font-size: 1em;
-  color: #666;
+  font-size: 1.1em;
+  color: #2c3e50;
 }
 
 .unorderdlist {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .why-choose-us li button {
@@ -111,26 +115,14 @@
 
 @media (min-width: 768px) {
   .testimonials-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #fff;
+    padding: 40px;
   }
 
   .trusted-clients,
   .why-choose-us {
-    width: 40%;
-  }
-  .testimonial {
-    position: relative;
-    /* padding: 20px; */
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 200px; /* Fixed height */
-    overflow: hidden;
+    width: 45%;
   }
 }
 

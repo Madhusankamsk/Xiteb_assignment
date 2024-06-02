@@ -1,12 +1,11 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 .container {
   display: flex;
-  font-family: 'Karla', sans-serif; /* Corrected font-family name */
+  font-family: 'Karla', sans-serif; 
   justify-content: center;
   align-content: center;
-  padding: 50px 20px; /* Vertical padding 40px, horizontal padding 20px */
+  padding: 50px 20px; 
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -27,11 +26,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0; /* Remove extra padding to avoid overflow */
+  padding: 0;
 }
 
 .worker-image {
-  max-width: 600px; /* Set initial max size */
+  max-width: 600px; 
   height: auto;
 }
 
@@ -52,7 +51,7 @@
   position: absolute;
   top: -40px;
   left: -20px;
-  height: 130px; /* Adjust size as needed */
+  height: 130px; 
   z-index: 0;
 }
 
@@ -92,7 +91,6 @@
   color: #f0f0f0;
 }
 
-/* Media Queries for Responsive Design */
 
 @media (max-width: 768px) {
   .container {

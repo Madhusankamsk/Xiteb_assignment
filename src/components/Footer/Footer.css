@@ -4,7 +4,7 @@
     font-family: "Yantramanav", sans-serif;
     background-color: #5D6C83;
     color: white;
-    padding: 80px; /* Uniform padding for all content */
+    padding: 80px; 
     position: relative;
 }
 
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0; /* Uniform padding */
+    padding: 40px 0; 
     flex-wrap: wrap;
 }
 
@@ -80,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 40px 0; /* Uniform padding */
+    padding: 40px 0; 
 }
 
 .footer-section {
@@ -130,7 +130,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #888;
-    padding: 10px 0; /* Uniform padding */
+    padding: 10px 0; 
     color: white;
     flex-wrap: wrap;
 }
